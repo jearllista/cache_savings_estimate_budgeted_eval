@@ -1,4 +1,4 @@
-# cost_budgeted_evaluation_0d39397b
+# cache_savings_estimate_budgeted_eval
 
 （缓存省钱测算场景）缓存省钱测算的测量噪声主要来自哪里？用成本与资源核算估计噪声水平，并求出结论仍然稳定的最小样本量。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python cost_budgeted_evaluation_0d39397b.py --help
-python cost_budgeted_evaluation_0d39397b.py --input sample.txt
-python cost_budgeted_evaluation_0d39397b.py --input sample.txt --json
+python cache_savings_estimate_budgeted_eval.py --help
+python cache_savings_estimate_budgeted_eval.py --input sample.txt
+python cache_savings_estimate_budgeted_eval.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「预算内评测」使用分隔符 `,` 区分标签与载荷。
@@ -50,7 +50,7 @@ python cost_budgeted_evaluation_0d39397b.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python cost_budgeted_evaluation_0d39397b.py --input sample.txt --json`；
+2. 运行 `python cache_savings_estimate_budgeted_eval.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
